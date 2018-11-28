@@ -71,25 +71,33 @@
       </div>
     </nav>
 
-
-    <!-- Header - set the background image for the header in the line below -->
+    <!-- Header - set the background image for the header in the line below Original 
     <header class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1076');">
-      <img class="img-fluid d-block mx-auto" src="http://placehold.it/200x200&text=Logo" alt="">
+        <img class="img-fluid d-block mx-auto" src="http://placehold.it/200x200&text=Logo" alt="">
+      </header> -->
+
+    <!-- Header - set the background image for the header in the line below Original -->
+    <header class="py-5 bg-image-full" style="background-image: url('../static/img/bg-tower-1.jpeg');">
+      <img class="img-fluid d-block mx-auto" src="../../static/img/stock-logo.png" alt="">
     </header>
 
     <!-- Content section -->
     <section class="py-3">
-        {% block content %}
-      <!-- <div class="container">
-        <h1>Section Heading</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-      </div> -->
-        {% endblock %}
+            <!--This meta will control how it will scale the image on different devices-->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <body>
+            <!--Base container class-->
+            <div class="w3-container"> 
+                {% block content %}
+
+                {% endblock %}
+            </div>
+            </body>
     </section>
 
     <!-- Image Section - set the background image for the header in the line below -->
-    <section class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1081');">
+    <section class="py-5 bg-image-full" style="background-image: url('../static/img/bg-tower-low.jpeg');">
       <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
       <div style="height: 100px;"></div>
     </section>
