@@ -1,0 +1,36 @@
+
+{% extends "core/base.html"%}
+
+{% block title%} Home Page {% endblock %}
+
+{% block content %}
+
+
+<p  margin-left: 700px;>
+    <strong>Hello Everyone!</strong>
+    <br><br>
+
+    This is the new site in progres as of November 28, 2018
+
+</p>
+
+{% for articulo in articulos %}
+    <!--Articulo-->
+    <br>
+    <div class= "row articulo">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fliud" src = "{{ articulo.image.url }}" width="320" height="200" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="selection-heading title">{{ articulo.title }}</h2>
+            <p>{{ articulo.description }}</p>
+        </div>
+    </div>
+    <br>
+
+    {% endfor %}
+{% endblock %}
+
+
+
+

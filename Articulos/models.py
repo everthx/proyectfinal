@@ -13,7 +13,7 @@ class Articulo(models.Model):
         ordering = ["-created"]
     
     def Article(self):
-        cadena = "{0},           [ created: {1} ]"
+        cadena = "{0}, [ created: {1} ]"
         return cadena.format(self.title, self.created)
 
     def __str__(self):
