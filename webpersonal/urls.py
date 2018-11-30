@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from core import views as core_views #Importing the vews from our core APP
 from Articulos import views as articulos_views 
+from Trabajos import views as trabajos_views
 
 from django.conf import settings
 
@@ -24,7 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', articulos_views.home, name = "home"),
     path('directorio/', core_views.directorio, name="directorio"),
-    path('bolsa/', core_views.bolsa, name="bolsa-de-trabajo"),
+    path('bolsa/', trabajos_views.bolsa, name="bolsa-de-trabajo"),
 ]
 
 

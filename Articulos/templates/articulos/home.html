@@ -24,11 +24,14 @@
         <div class="col-lg-7 col-md-8">
             <h2 class="selection-heading title">{{ articulo.title }}</h2>
             <p>{{ articulo.description }}</p>
+            {% if articulo.link%} <!-- If a Link exists-->
+                <p><a href="{{ articulo.link }}">Mas informacion</a></p>
+            {% endif %}
         </div>
     </div>
     <br>
 
-    {% endfor %}
+{% endfor %}
 {% endblock %}
 
 

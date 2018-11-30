@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     #user created Apps
     'core',
     'Articulos',
+    'Trabajos',
 
     #Django Apps
     'django.contrib.admin',

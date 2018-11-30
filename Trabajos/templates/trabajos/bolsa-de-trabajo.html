@@ -1,0 +1,31 @@
+
+{% extends "core/base.html"%}
+
+{% block title%} Bolsa de Trabajo{% endblock %}
+
+{% block content %}
+<p>
+    <strong>Bolsa de Trabajo</strong>
+    <br><br>
+    Esperala pronto!<br>
+    This is the new site in progres as of November 26, 2018
+
+</p>
+
+{% for trabajo in trabajos %}
+    <!--Trabajo-->
+    <br>
+    <div class= "row trabajo">
+        <div class="col-lg-7 col-md-8">
+            <h2 class="selection-heading title">{{ trabajo.title }}</h2>
+            <p>{{ trabajo.career }}</p>
+            {% if trabajo.link%} <!-- If a Link exists-->
+                <p><a href="{{ trabajo.link }}">Mas infomacion</a></p>
+            {% endif %}
+        </div>
+    </div>
+    <br>
+
+{% endfor %}
+{% endblock %}
+
