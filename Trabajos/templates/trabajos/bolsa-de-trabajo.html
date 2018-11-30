@@ -18,7 +18,8 @@
     <div class= "row trabajo">
         <div class="col-lg-7 col-md-8">
             <h2 class="selection-heading title">{{ trabajo.title }}</h2>
-            <p>{{ trabajo.career }}</p>
+            <p><strong>{{ trabajo.career }}</strong> : {{ trabajo.description}} </p>
+            
             {% if trabajo.link%} <!-- If a Link exists-->
                 <p><a href="{{ trabajo.link }}">Mas infomacion</a></p>
             {% endif %}
