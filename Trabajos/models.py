@@ -5,7 +5,7 @@ from django.db import models
 class Trabajo(models.Model):
     title = models.CharField(max_length=50)
     career = models.CharField(max_length=50)
-    description = models.TextField(max_length=150)
+    description = models.TextField(max_length=500)
     link = models.URLField(verbose_name="Direccionar a otro sitio", null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)

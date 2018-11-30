@@ -5,12 +5,23 @@
 
 {% block content %}
 <p>
-    <strong>Bolsa de Trabajo</strong>
+    <strong>Crear nueva bolsa de trabajo</strong>
     <br><br>
-    Encuentra nuevas oportunidades de trabajo en tu carrera!
+    Esperala pronto!<br>
+    This is the new site in progres as of November 26, 2018
 
 </p>
 
+<p>
+    <div class="containter">
+        <form method="POST">
+            {% csrf_token %}
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</p>
 
 {% for trabajo in trabajos %}
     <!--Trabajo-->
